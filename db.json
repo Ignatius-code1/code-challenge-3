@@ -1,0 +1,24 @@
+{"posts": [
+    {
+      "id": 1,
+      "title": "Introduction to HTML",
+      "content": "HTML is the standard markup language for creating Web pages.",
+      "author": "Jane Doe",
+      "image": "https://via.placeholder.com/600x200?text=HTML"
+    },
+    {
+      "id": 2,
+      "title": "Styling with CSS",
+      "content": "CSS describes how HTML elements are to be displayed on screen.",
+      "author": "John Smith",
+      "image": "https://via.placeholder.com/600x200?text=CSS"
+    },
+    {
+      "id": 3,
+      "title": "JavaScript Basics",
+      "content": "JavaScript makes web pages interactive.",
+      "author": "Alex Lee",
+      "image": "https://via.placeholder.com/600x200?text=JS"
+    }
+  ]
+}

@@ -1,0 +1,143 @@
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f4f6f8;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 900px;
+  margin: 40px auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+  padding: 32px 24px;
+}
+
+h1 {
+  text-align: center;
+  color: #2d3748;
+  margin-bottom: 32px;
+}
+
+#post-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.post-item {
+  background: #edf2f7;
+  border-radius: 8px;
+  padding: 16px 20px;
+  cursor: pointer;
+  transition: background 0.2s, box-shadow 0.2s;
+  min-width: 180px;
+  flex: 1 1 200px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  font-weight: 500;
+  color: #2b2d42;
+}
+
+.post-item:hover {
+  background: #e2e8f0;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+}
+
+#post-detail {
+  background: #f7fafc;
+  border-radius: 8px;
+  padding: 24px;
+  margin-bottom: 32px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+#post-detail h2 {
+  margin-top: 0;
+  color: #2d3748;
+}
+
+#post-detail img {
+  max-width: 100%;
+  border-radius: 6px;
+  margin: 16px 0;
+}
+
+form {
+  background: #f1f5f9;
+  border-radius: 8px;
+  padding: 24px;
+  margin-bottom: 24px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.03);
+}
+
+form h2, form h4 {
+  margin-top: 0;
+  color: #2d3748;
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  color: #4a5568;
+  font-size: 15px;
+}
+
+input[type="text"], textarea {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 16px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-size: 15px;
+  background: #fff;
+  transition: border 0.2s;
+}
+
+input[type="text"]:focus, textarea:focus {
+  border: 1.5px solid #4299e1;
+  outline: none;
+}
+
+button {
+  background: #4299e1;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 20px;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+  margin-right: 8px;
+}
+
+button:hover {
+  background: #2563eb;
+}
+
+button#cancel-edit {
+  background: #a0aec0;
+}
+
+button#cancel-edit:hover {
+  background: #718096;
+}
+
+.hidden {
+  display: none;
+}
+
+@media (max-width: 700px) {
+  .container {
+    padding: 12px 4px;
+  }
+  #post-list {
+    flex-direction: column;
+    gap: 8px;
+  }
+  form, #post-detail {
+    padding: 12px;
+  }
+}
