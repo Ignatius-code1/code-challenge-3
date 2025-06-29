@@ -15,7 +15,7 @@ A simple blog application to view, add, edit, and delete blog posts. Built with 
 ### 1. Clone or Download the Repository
 
 ```
-git clone <your-repo-url>
+git clone git@github.com:Ignatius-code1/code-challenge-3.git
 cd code-challenge-3
 ```
 
