@@ -1,5 +1,5 @@
 # My Blog App
-
+Author : Ignatius Macharia Waweru 
 A simple blog application to view, add, edit, and delete blog posts. Built with vanilla JavaScript, HTML, CSS, and powered by a mock REST API using `json-server`.
 
 ## Features
