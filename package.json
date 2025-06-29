@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "server": "json-server db.json",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -17,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/Ignatius-code1/code-challenge-3/issues"
   },
-  "homepage": "https://github.com/Ignatius-code1/code-challenge-3#readme"
+  "homepage": "https://github.com/Ignatius-code1/code-challenge-3#readme",
+  "devDependencies": {
+    "json-server": "^0.17.4"
+  }
 }

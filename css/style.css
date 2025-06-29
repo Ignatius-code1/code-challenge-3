@@ -1,6 +1,6 @@
 body {
   font-family: 'Segoe UI', Arial, sans-serif;
-  background: #f4f6f8;
+  background: #0c8aa0;
   margin: 0;
   padding: 0;
 }
@@ -8,7 +8,7 @@ body {
 .container {
   max-width: 900px;
   margin: 40px auto;
-  background: #fff;
+  background: #06fae6da;
   border-radius: 12px;
   box-shadow: 0 4px 24px rgba(0,0,0,0.08);
   padding: 32px 24px;
@@ -28,7 +28,7 @@ h1 {
 }
 
 .post-item {
-  background: #edf2f7;
+  background: #ffffff;
   border-radius: 8px;
   padding: 16px 20px;
   cursor: pointer;
@@ -45,12 +45,35 @@ h1 {
   box-shadow: 0 4px 16px rgba(0,0,0,0.08);
 }
 
+.main-flex {
+  display: flex;
+  gap: 32px;
+}
+
+.left-column {
+  flex: 1 1 340px;
+  min-width: 300px;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.right-column {
+  flex: 2 1 0;
+  min-width: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
 #post-detail {
   background: #f7fafc;
   border-radius: 8px;
   padding: 24px;
   margin-bottom: 32px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  margin-top: 0;
 }
 
 #post-detail h2 {
@@ -129,7 +152,15 @@ button#cancel-edit:hover {
   display: none;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 900px) {
+  .main-flex {
+    flex-direction: column;
+    gap: 0;
+  }
+  .right-column, .left-column {
+    max-width: 100%;
+    min-width: 0;
+  }
   .container {
     padding: 12px 4px;
   }
