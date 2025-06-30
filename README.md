@@ -1,36 +1,37 @@
 # My Blog App
-Author : Ignatius Macharia Waweru 
-A simple blog application to view, add, edit, and delete blog posts. Built with vanilla JavaScript, HTML, CSS, and powered by a mock REST API using `json-server`.
+Author: Ignatius Macharia Waweru .
+A modern blog application to view, add, edit, and delete blog posts. Built with vanilla JavaScript, HTML, CSS, and powered by a mock REST API using `json-server`.
 
 ## Features
 - View all blog post titles and images
 - Click a post to see its details
-- Add a new blog post
-- Edit and update a post
-- Delete a post
-- Responsive and modern UI
+- Add a new blog post (POST)
+- Edit and update a post (PATCH)
+- Delete a post (DELETE)
+- Responsive and modern UI (two-column layout)
+- Shows the first post's details on page load
 
 ## Setup Instructions
 
 ### 1. Clone or Download the Repository
 
 ```
-git clone git@github.com:Ignatius-code1/code-challenge-3.git
+git clone <your-repo-url>
 cd code-challenge-3
 ```
 
 ### 2. Install Dependencies
 
-Install `json-server` globally if you haven't:
+Install `json-server` locally (already in devDependencies):
 
 ```
-npm install -g json-server@0.17.4
+npm install
 ```
 
 ### 3. Start the Backend (Mock API)
 
 ```
-json-server db.json
+npm run server
 ```
 
 This will start the API at `http://localhost:3000`.
@@ -58,4 +59,8 @@ Or simply open `index.html` in your browser.
 - [json-server](https://github.com/typicode/json-server)
 
 ## Author
-- Ignatius Macharia Waweru .❤
+- Your Name
+
+---
+
+Feel free to customize and extend this project!
